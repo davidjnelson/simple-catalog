@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body ng-app="catalog">
+        [ <a href="/#/">List Products</a> | <a href="/#/create">Create Product</a> ]
+        <ng-view></ng-view>
+
+        <!-- normally these would all be concatenated and minified automatically via gulp, so manually listing
+             them here would not be required -->
+
+        <!-- vendor dependencies -->
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+
+        <!-- module definitions -->
+        <script src="catalog/catalog-module.js"></script>
+        <script src="products/products-module.js"></script>
+        <script src="model/model-module.js"></script>
+
+        <!-- application -->
+        <script src="catalog/CatalogRouter.js"></script>
+        <script src="catalog/route-controllers/ProductController.js"></script>
+        <script src="products/directives/CreateProductDirective.js"></script>
+        <script src="products/directives/ListProductsDirective.js"></script>
+        <script src="products/directives/ProductDetailDirective.js"></script>
+        <script src="model/ModelConstants.js"></script>
+        <script src="model/services/ProductService.js"></script>
+    </body>
+</html>

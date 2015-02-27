@@ -1,0 +1,21 @@
+<h2>Create Product</h2>
+
+<div>
+    <strong>{{ output.message }}</strong>
+</div>
+
+<div>
+    <strong>Name: </strong> <input ng-model="product.name" type="text" />
+</div>
+
+<div>
+    <strong>Description: </strong> <textarea ng-model="product.description"></textarea>
+</div>
+
+<div>
+    <strong>Price: </strong> <input ng-model="product.price" type="text" />
+</div>
+
+<div>
+    <input ng-click="save(product)" type="submit" />
+</div>

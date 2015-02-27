@@ -1,0 +1,24 @@
+<h2>{{ product.name }}</h2>
+
+<div>{{ product.description }}</div>
+
+<div>
+    Price: {{ product.price | currency }}
+</div>
+
+<div>
+    <br />
+    <strong>Comments</strong>
+</div>
+
+<div>
+    <p ng-repeat="comment in product.comments">{{ comment }}</p>
+</div>
+
+<div>
+    <br />
+    <strong>Add Comment</strong>
+</div>
+
+<textarea ng-model="comment.commentText"></textarea>
+<button ng-click="addComment(comment.commentText)">Add</button>
