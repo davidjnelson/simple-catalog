@@ -2,10 +2,9 @@
 
 ## Notes
 
-This is the first time I've used node as a webapp, and my sql was a bit rusty!  My goal was to create a 
-product catalog with no more than 1,000 products.  I decided to have a little fun with some performance optimizations.
-I certainly would write this differently if I had so many products I couldn't easily fit them in the browser memory, 
-or download them quickly enough.
+My goal was to create a product catalog with no more than 1,000 products.  I decided to have a little fun with
+some performance optimizations.  I certainly would write this differently if I had so many products I couldn't easily 
+fit them in the browser memory, or download them quickly enough.
 
 ## Non Goals
 
